@@ -63,8 +63,19 @@ const Navbar = ({ setShowModal, isSheetConnected }) => {
             </nav>
 
             <div className={`mobile-drawer ${menuOpen ? 'open' : ''}`}>
-                <button className="btn-global connect-btn" onClick={() => handleItemClick(() => setShowModal(true))}>
-                    Connect Sheet
+
+                <button
+                    className={`btn-global connect-btn ${isSheetConnected ? 'connected' : ''}`}
+                    onClick={() => setShowModal(true)}
+                >
+                    {isSheetConnected ? (
+                        <>
+                            <img src={checkIcon} alt="Connected" style={{ width: 18 }} />
+                            Connected
+                        </>
+                    ) : (
+                        'Connect Sheet'
+                    )}
                 </button>
 
                 <button className="btn-global download-btn">

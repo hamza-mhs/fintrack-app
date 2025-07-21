@@ -4,11 +4,13 @@ body {
     background-color: #121212;
     color: #e0e0e0;
     font-family: sans-serif;
+
 }
 
-/* .body-container {
-    padding: 2rem;
-} */
+.body-container {
+    padding-top: 64px !important;
+    padding-bottom: 100px !important;
+}
 
 .chip {
 
@@ -48,6 +50,19 @@ body {
     /* 125% */
     letter-spacing: -0.64px;
     width: 100%
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 24px;
+        line-height: 32px;
+        /* smaller font for mobile */
+    }
+
+    .login-heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 
 .highlight-invested {
@@ -466,6 +481,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 100px 24px;
 }
 
 .login-logo {
@@ -484,7 +500,7 @@ body {
     line-height: 40px;
     letter-spacing: -0.64px;
     width: 100%;
-
+    text-align: center;
 }
 
 .login-paragraph {
@@ -496,6 +512,7 @@ body {
     line-height: 24px;
     letter-spacing: -0.32px;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .google-btn {

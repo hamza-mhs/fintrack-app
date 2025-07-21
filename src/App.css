@@ -54,6 +54,7 @@ body,
   flex-direction: column;
   /* 🔧 This is the key fix */
   align-items: center;
+
   justify-content: center;
   /* optional: start from top */
 
